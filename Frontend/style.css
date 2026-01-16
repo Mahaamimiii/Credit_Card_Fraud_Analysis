@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+header {
+  background: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.result {
+  text-align: center;
+}
+
+.risk {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.high {
+  color: #dc2626;
+}
+
+.medium {
+  color: #f59e0b;
+}
+
+.low {
+  color: #16a34a;
+}
+
+/* SHAP-style chart */
+.shap-chart {
+  margin-top: 15px;
+}
+
+.shap-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shap-label {
+  width: 180px;
+  font-size: 14px;
+}
+
+.shap-bar-container {
+  flex: 1;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.shap-bar {
+  height: 24px;
+  background: linear-gradient(90deg, #dc2626, #f87171);
+  color: white;
+  font-size: 13px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #e5e7eb;
+  margin-top: 40px;
+}
